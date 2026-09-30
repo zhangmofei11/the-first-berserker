@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combat Guide - The First Berserker Wiki</title>
+    <meta name="description" content="Complete The First Berserker combat guide. Combo system, rage mechanic, and advanced techniques.">
+    <meta name="keywords" content="The First Berserker combat, First Berserker combos, First Berserker rage, combat guide">
+    <link rel="canonical" href="https://the-first-berserker.wiki/combat.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        bsk: { 500: '#DC2626', 600: '#B91C1C', 700: '#991B1B' },
+                        dark: { 900: '#0f0808', 800: '#181010', 700: '#221818' }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(180deg, #0f0808 0%, #181010 50%, #0f0808 100%); min-height: 100vh; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 40px rgba(220, 38, 38, 0.3); }
+    </style>
+</head>
+<body class="font-inter text-gray-100">
+    <header class="bg-dark-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-bsk-500 to-bsk-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">FB</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white hidden sm:block">The First Berserker</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-300 hover:text-bsk-500 transition-colors">Home</a>
+                    <a href="combat.html" class="text-bsk-500 hover:text-bsk-400 transition-colors font-medium">Combat</a>
+                    <a href="builds.html" class="text-gray-300 hover:text-bsk-500 transition-colors">Builds</a>
+                    <a href="weapons.html" class="text-gray-300 hover:text-bsk-500 transition-colors">Weapons</a>
+                    <a href="walkthrough.html" class="text-gray-300 hover:text-bsk-500 transition-colors">Walkthrough</a>
+                    <a href="tips.html" class="text-gray-300 hover:text-bsk-500 transition-colors">Tips</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <h1 class="font-cinzel text-4xl font-bold text-white mb-4">Combat Guide</h1>
+            <p class="text-gray-400">Master the brutal combat system.</p>
+        </div>
+
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-bsk-400 mb-6">Basic Combat</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3">⚔️ Light Attacks</h3>
+                    <p class="text-gray-400 text-sm mb-3">Fast attacks that build combo meter quickly.</p>
+                    <ul class="text-gray-500 text-xs space-y-1">
+                        <li>• Quick succession attacks</li>
+                        <li>• Good for building rage</li>
+                        <li>• Low damage per hit</li>
+                    </ul>
+                </div>
+
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3">💥 Heavy Attacks</h3>
+                    <p class="text-gray-400 text-sm mb-3">Slow but powerful strikes that stagger enemies.</p>
+                    <ul class="text-gray-500 text-xs space-y-1">
+                        <li>• High damage output</li>
+                        <li>• Can interrupt enemy attacks</li>
+                        <li>• Builds rage faster</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-red-400 mb-6">Rage System</h2>
+            <div class="bg-dark-800/80 rounded-xl border border-red-500/30 p-6 mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-red-400">0-30%</div>
+                        <div class="text-gray-500 text-xs">Normal State</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-orange-400">30-70%</div>
+                        <div class="text-gray-500 text-xs">Enraged</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-yellow-400">70-100%</div>
+                        <div class="text-gray-500 text-xs">Berserk Mode</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-white">MAX</div>
+                        <div class="text-gray-500 text-xs">Ultimate Fury</div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-orange-400 mb-3">🔥 Enraged State</h3>
+                    <p class="text-gray-400 text-sm mb-3">Unlocked at 30% rage. Increased damage and attack speed.</p>
+                    <ul class="text-gray-500 text-xs space-y-1">
+                        <li>• +20% damage boost</li>
+                        <li>• +15% attack speed</li>
+                        <li>• Red aura effect</li>
+                    </ul>
+                </div>
+
+                <div class="bg-dark-800/80 rounded-xl border border-yellow-500/30 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-yellow-400 mb-3">⚡ Berserk Mode</h3>
+                    <p class="text-gray-400 text-sm mb-3">Unlocked at 70% rage. Devastating attacks with unique moves.</p>
+                    <ul class="text-gray-500 text-xs space-y-1">
+                        <li>• +50% damage boost</li>
+                        <li>• Special attack abilities</li>
+                        <li>• Health regeneration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-white mb-6">Combo System</h2>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                <ul class="text-gray-400 text-sm space-y-3">
+                    <li>• <span class="text-white">Light x3 → Heavy</span> - Standard combo starter</li>
+                    <li>• <span class="text-white">Heavy → Light x2 → Heavy</span> - Air launch combo</li>
+                    <li>• <span class="text-white">Heavy x3</span> - Ground slam finisher</li>
+                    <li>• <span class="text-white">Rage activation</span> - Cancel any combo into rage ability</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-white mb-6">Advanced Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6 text-center">
+                    <h3 class="font-cinzel text-lg font-bold text-bsk-400 mb-2">Parry</h3>
+                    <p class="text-gray-400 text-sm">Perfect timing block counters enemy attacks</p>
+                </div>
+                <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6 text-center">
+                    <h3 class="font-cinzel text-lg font-bold text-bsk-400 mb-2">Dodge Counter</h3>
+                    <p class="text-gray-400 text-sm">Dodge into attacks for counter damage</p>
+                </div>
+                <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6 text-center">
+                    <h3 class="font-cinzel text-lg font-bold text-bsk-400 mb-2">Air Combo</h3>
+                    <p class="text-gray-400 text-sm">Launch enemies and continue combo in air</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-900 border-t border-gray-800 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 The First Berserker Wiki. Not affiliated with Nexon/Red Games.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips & Tricks - The First Berserker Wiki</title>
+    <meta name="description" content="Essential The First Berserker tips and tricks. Combat, rage management, and exploration tips.">
+    <meta name="keywords" content="The First Berserker tips, First Berserker tricks, rage management, beginner guide">
+    <link rel="canonical" href="https://the-first-berserker.wiki/tips.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        bsk: { 500: '#DC2626', 600: '#B91C1C', 700: '#991B1B' },
+                        dark: { 900: '#0f0808', 800: '#181010', 700: '#221818' }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(180deg, #0f0808 0%, #181010 50%, #0f0808 100%); min-height: 100vh; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 40px rgba(220, 38, 38, 0.3); }
+    </style>
+</head>
+<body class="font-inter text-gray-100">
+    <header class="bg-dark-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-bsk-500 to-bsk-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">FB</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white hidden sm:block">The First Berserker</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-300 hover:text-bsk-500 transition-colors">Home</a>
+                    <a href="combat.html" class="text-gray-300 hover:text-bsk-500 transition-colors">Combat</a>
+                    <a href="builds.html" class="text-gray-300 hover:text-bsk-500 transition-colors">Builds</a>
+                    <a href="weapons.html" class="text-gray-300 hover:text-bsk-500 transition-colors">Weapons</a>
+                    <a href="walkthrough.html" class="text-gray-300 hover:text-bsk-500 transition-colors">Walkthrough</a>
+                    <a href="tips.html" class="text-bsk-500 hover:text-bsk-400 transition-colors font-medium">Tips</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <h1 class="font-cinzel text-4xl font-bold text-white mb-4">Tips & Tricks</h1>
+            <p class="text-gray-400">Essential advice for dominating combat.</p>
+        </div>
+
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-red-400 mb-6">Combat Tips</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3">🔥 Manage Your Rage</h3>
+                    <p class="text-gray-400 text-sm">Don't waste rage on weak enemies. Save it for tough fights and bosses.</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3">⚔️ Master Parrying</h3>
+                    <p class="text-gray-400 text-sm">Perfect parries deal massive damage and stun enemies. Practice timing!</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3">🎯 Use Environment</h3>
+                    <p class="text-gray-400 text-sm">Explosive barrels and environmental hazards deal extra damage.</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3">💨 Keep Moving</h3>
+                    <p class="text-gray-400 text-sm">Standing still gets you hit. Circle enemies and stay mobile.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-orange-400 mb-6">Rage Tips</h2>
+            <div class="bg-dark-800/80 rounded-xl border border-orange-500/30 p-6">
+                <ul class="text-gray-400 text-sm space-y-3">
+                    <li>• <span class="text-white">Heavy attacks build rage faster</span> - Use them against groups</li>
+                    <li>• <span class="text-white">Get hit to build rage</span> - Taking damage fuels your fury</li>
+                    <li>• <span class="text-white">Berserk mode regenerates health</span> - Use it when low HP</li>
+                    <li>• <span class="text-white">Rage abilities don't cost rage</span> - Only activation has cost</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-green-400 mb-6">Exploration Tips</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3">🔍 Search Secret Areas</h3>
+                    <p class="text-gray-400 text-sm">Breakable walls and hidden passages often contain rare weapons.</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3">📦 Complete Side Quests</h3>
+                    <p class="text-gray-400 text-sm">They provide upgrade materials and unlock powerful abilities.</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3">🏪 Visit Shops Regularly</h3>
+                    <p class="text-gray-400 text-sm">New weapons and materials appear as you progress.</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3">🔄 Upgrade Often</h3>
+                    <p class="text-gray-400 text-sm">Don't save materials - regular upgrades make game much easier.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-white mb-6">General Tips</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6 text-center">
+                    <h3 class="font-cinzel text-lg font-bold text-bsk-400 mb-2">Save Often</h3>
+                    <p class="text-gray-400 text-sm">Multiple save slots prevent progress loss</p>
+                </div>
+                <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6 text-center">
+                    <h3 class="font-cinzel text-lg font-bold text-bsk-400 mb-2">Study Enemies</h3>
+                    <p class="text-gray-400 text-sm">Watch attack patterns before engaging</p>
+                </div>
+                <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6 text-center">
+                    <h3 class="font-cinzel text-lg font-bold text-bsk-400 mb-2">Upgrade Weapons</h3>
+                    <p class="text-gray-400 text-sm">A upgraded rare beats a weak legendary</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-900 border-t border-gray-800 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 The First Berserker Wiki. Not affiliated with Nexon/Red Games.</p>
+        </div>
+    </footer>
+</body>
+</html>
